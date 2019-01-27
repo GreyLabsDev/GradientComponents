@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:clickable="true"
+        android:focusable="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only layout"
+                style="@style/TextView.Primary.Title"
+        />
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/colorDivider"
+              android:layout_marginBottom="16dp"
+              android:layout_marginTop="16dp"/>
+
+        <com.greylabs.gradientcomponents.component.GradientView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                app:gradientOrientation="horizontal"
+                app:baseColors="#91276C, #0F3368"
+                app:startColorsPositions="0, 0.66"
+                app:endColorsPositions="0.5, 0.99"
+                app:animationStepDuration="2000"
+                app:animationLoop="true"
+                app:animationOnStart="true"
+                app:topLeftCorner="32dp"
+                app:bottomRightCorner="32dp"
+        />
+
+        <TextView
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/ex_gradient_view_xml"
+                style="@style/TextView.Primary.Dark"
+                />
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

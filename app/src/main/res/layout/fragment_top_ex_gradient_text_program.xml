@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only in code"
+                style="@style/TextView.Primary.Title"/>
+
+        <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorDivider"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+        <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/TextView.Primary.Dark"
+                        android:text="@string/ex_gradient_text_code_text"
+                        android:layout_marginBottom="16dp"/>
+
+                <LinearLayout
+                        android:id="@+id/gradient_text_container"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_example_text"
+                        android:padding="16dp"
+                        android:layout_marginBottom="16dp">
+
+                    <com.greylabs.gradientcomponents.component.GradientTextView
+                            android:id="@+id/gradient_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:baseColors="#FFFFFF, #91276C"
+                            app:startColorsPositions="0.4, 0.7"
+                            android:gravity="center"
+                            android:textSize="22sp"
+                            android:text="@string/ex_gradient_text_code_title"/>
+
+                </LinearLayout>
+
+                <android.support.design.widget.TextInputLayout
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        app:boxCornerRadiusTopStart="16dp"
+                        app:boxCornerRadiusTopEnd="16dp"
+                        app:boxCornerRadiusBottomStart="16dp"
+                        app:boxCornerRadiusBottomEnd="16dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="@string/ex_gradient_text_code_hint"
+                        android:layout_marginBottom="16dp">
+
+                    <android.support.v7.widget.AppCompatEditText
+                            android:id="@+id/edit_user_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextView.Primary.Dark"
+                            android:imeOptions="actionDone"
+                            android:singleLine="true"/>
+
+                </android.support.design.widget.TextInputLayout>
+
+                <TextView
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="First color position"
+                        style="@style/TextView.Primary.Dark"/>
+
+                <SeekBar
+                        android:id="@+id/seekbar_first_color_pos"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"/>
+
+                <TextView
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Second color position"
+                        style="@style/TextView.Primary.Dark"
+                />
+
+                <SeekBar
+                        android:id="@+id/seekbar_second_color_pos"
+                        android:layout_marginBottom="8dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:max="100"/>
+
+                <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                    <CheckBox
+                            android:id="@+id/checkbox_enable_animation"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextView.Primary.Dark"
+                            android:text="Enable animation"/>
+
+                    <CheckBox
+                            android:id="@+id/checkbox_loop_animation"
+                            android:layout_weight="1"
+                            android:layout_marginBottom="8dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextView.Primary.Dark"
+                            android:text="Loop animation"/>
+
+                </LinearLayout>
+
+                <Spinner
+                        android:layout_marginBottom="8dp"
+                        android:id="@+id/spinner_gradient_orientation"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                </Spinner>
+
+                <android.support.design.button.MaterialButton
+                        android:id="@+id/button_create_gradient_text"
+                        style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                        app:textAllCaps="false"
+                        android:text="Create GradientTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </android.support.v4.widget.NestedScrollView>
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

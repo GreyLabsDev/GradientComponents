@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/root">
+
+    <android.support.design.widget.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:background="@color/colorPrimaryDark"
+            android:elevation="0dp"
+            tools:targetApi="lollipop"
+            android:padding="16dp">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical">
+
+                <com.greylabs.gradientcomponents.component.GradientView
+                        android:id="@+id/gradient_decor_panel"
+                        android:layout_marginStart="8dp"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        app:baseColors="#91276C, #0F3368"
+                        app:startColorsPositions="0, 0.5"
+                        app:endColorsPositions="0.5, 1"
+                        app:topLeftCorner="8dp"
+                        app:bottomRightCorner="8dp"
+                        app:animationOnStart="true"
+                        app:animationLoop="true"
+                        app:animationStepDuration="2600"
+                        android:layout_gravity="center_vertical"/>
+
+                <ImageView
+                        android:id="@+id/image_button_menu"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_menu"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/bg_ripple"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:layout_gravity="center_vertical"/>
+
+                <LinearLayout
+                        android:layout_marginStart="56dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                    <FrameLayout
+                            android:layout_width="80dp"
+                            android:layout_height="48dp"
+                            android:id="@+id/button_view">
+
+                        <ImageView
+                                android:id="@+id/button_view_stroke"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bg_selected_toolbar_button">
+                        </ImageView>
+
+                        <TextView
+                                style="@style/TextView.Primary.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="@string/menu_item_text_gradientview"
+                                android:layout_gravity="center_vertical|center_horizontal"/>
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                            android:id="@+id/button_text"
+                            android:layout_width="80dp"
+                            android:layout_height="48dp"
+                            android:layout_marginStart="16dp">
+
+                        <ImageView
+                                android:id="@+id/button_text_stroke"
+                                android:layout_width="match_parent"
+                                android:layout_height="40dp"
+                                android:layout_gravity="center_vertical|center_horizontal"
+                                android:adjustViewBounds="true"
+                                android:src="@drawable/bg_selected_toolbar_button">
+                        </ImageView>
+
+                        <TextView
+                                style="@style/TextView.Primary.Title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/white"
+                                android:text="@string/menu_item_text_gradienttextview"
+                                android:layout_gravity="center_vertical|center_horizontal"/>
+                    </FrameLayout>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.CoordinatorLayout
+            android:id="@+id/backdrop_bottom_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_behavior="android.support.design.widget.AppBarLayout$ScrollingViewBehavior">
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</android.support.design.widget.CoordinatorLayout>

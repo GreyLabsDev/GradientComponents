@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Only layout"
+                style="@style/TextView.Primary.Title"/>
+
+        <View android:layout_width="match_parent"
+              android:layout_height="1dp"
+              android:background="@color/colorDivider"
+              android:layout_marginTop="16dp"
+              android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="16dp"
+                android:padding="16dp"
+                android:background="@drawable/bg_example_text">
+
+            <com.greylabs.gradientcomponents.component.GradientTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ex_gradient_text_xml_title"
+                    app:baseColors="#FFFFFF, #91276C"
+                    app:gradientOrientation="horizontal"
+                    app:startColorsPositions="0.2,0.5"
+                    app:endColorsPositions="1, 1.5"
+                    app:animationStepDuration="1200"
+                    app:animationOnStart="true"
+                    app:animationLoop="true"
+                    android:textSize="22sp"
+                    android:typeface="monospace"
+                    android:gravity="center"/>
+
+        </LinearLayout>
+
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.Primary.Dark"
+                android:text="@string/ex_gradient_text_xml_text"
+        />
+
+    </LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

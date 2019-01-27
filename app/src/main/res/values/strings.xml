@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">GRC</string>
+
+    //Welcome screen
+    <string name="welcome_title">Welcome!</string>
+    <string name="welcome_message">GRC - GradientComponents\n\nThis is example application that shows main features of GradientComponents library.</string>
+    <string name="welcome_info">Sergey Sh. (GreyLabsDev)\n2019\n\n\nMe on github:</string>
+    <string name="welcome_link_github">https://github.com/GreyLabsDev</string>
+
+    //Examples titles
+    <string name="ex_top_title_xml">Only layout</string>
+    <string name="ex_top_title_code">Only in code</string>
+
+    //GradientTextView xml screen
+    <string name="ex_gradient_text_xml_title">GradientTextView with two colors and looped animation</string>
+    <string name="ex_gradient_text_xml_text">All properties of this component declared in xml layout file. For basic use you don`t need to do something in code.</string>
+
+    //GradientTextView code screen
+    <string name="ex_gradient_text_code_title">Your own gradient text! =)</string>
+    <string name="ex_gradient_text_code_text">Example shows you how to setup this component in code. As you can see, almost all properties are same to GradientView. </string>
+    <string name="ex_gradient_text_code_hint">Enter your text here</string>
+
+    //GradientView xml screen
+    <string name="ex_gradient_view_xml">This example shows how you can use this component if it added only in your layout file. You can see that xml version allows you to use almost all features, even animation.</string>
+
+    //GradientView code screen
+    <string name="ex_gradient_view_code">In this example you can see possibility of adding this component dynamically in code of your view and setup all properties.</string>
+
+    //Toolbar menu
+    <string name="menu_item_text_gradientview">VIEW</string>
+    <string name="menu_item_text_gradienttextview">TEXT</string>
+</resources>

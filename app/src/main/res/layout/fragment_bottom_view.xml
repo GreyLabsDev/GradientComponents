@@ -1,0 +1,86 @@
+<android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+        android:background="@color/colorPrimaryDark">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <TextView
+                android:id="@+id/button_show_welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.Primary"
+                android:drawableStart="@drawable/ic_welcome"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:background="@drawable/bg_ripple_shape"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:text="Welcome"/>
+
+        <TextView
+                android:id="@+id/button_show_example_one"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.Primary"
+                android:drawableStart="@drawable/ic_example_xml"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_ripple_shape"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:text="GradientView only in XML"/>
+
+        <TextView
+                android:id="@+id/button_show_example_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextView.Primary"
+                android:drawableStart="@drawable/ic_example_code"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:padding="8dp"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_ripple_shape"
+                android:drawablePadding="4dp"
+                android:gravity="center_vertical"
+                android:clickable="true"
+                android:text="GradientView in code"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+            android:id="@+id/backdrop_top"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_backdrop_top"
+    tools:visibility="gone">
+
+        <LinearLayout
+                android:id="@+id/backdrop_top_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+        </LinearLayout>
+
+        <View
+                android:id="@+id/backdrop_top_container_overlay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_backdrop_top"
+                android:alpha="0"/>
+
+    </FrameLayout>
+
+</android.support.design.widget.CoordinatorLayout>
