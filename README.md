@@ -39,16 +39,16 @@ Full example you can see in sample [app](https://github.com/GreyLabsDev/Gradient
 1. Add the JitPack repository to your build file
 ```
 allprojects {
-		repositories {
-			...
-			maven { url 'https://jitpack.io' }
-		}
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
 }
 ```
 2. Add the dependency 
 ```
 dependencies {
-	  implementation 'com.github.GreyLabsDev:GradientComponents:0.5.0'
+	implementation 'com.github.GreyLabsDev:GradientComponents:0.5.0'
 }
 ```
 
@@ -73,17 +73,17 @@ dependencies {
 ### How to use components in code
 **GradientTextView**
 ```
-        val gradientText = GradientTextView(requireContext())
-        gradientText.apply {
-            setOrientation(gradientOrientation)
-            addGradientColor("#FFFFFF")
-            addGradientColor("#91276C")
-            addGradientPosition(firstColorPos, secondColorPos)
-            addGradientPosition(0.9f, 1f)
-            setAnimationOnStart(isAnimationEnabled)
-            setLoopAnimation(isAnimationLoop)
-            setAnimationStepDuration(900L)
-            text = "Some text"
-            initView()
-        }
+       val gradientText = GradientTextView(requireContext())
+       gradientText.apply {
+           setOrientation(gradientOrientation)
+           addGradientColor("#FFFFFF")
+           addGradientColor("#91276C")
+           addGradientPosition(firstColorPos, secondColorPos)
+           addGradientPosition(0.9f, 1f)
+           setAnimationOnStart(isAnimationEnabled)
+           setLoopAnimation(isAnimationLoop)
+           setAnimationStepDuration(900L)
+           text = "Some text"
+           initView()
+      }
 ```
