@@ -1,4 +1,4 @@
-![screenshoot](https://github.com/GreyLabsDev/GradientComponents/blob/master/gradient_components_logo.png)
+![screenshoot](https://github.com/GreyLabsDev/GradientComponents/blob/master/gradient_components_logo_round_corners.png)
 
 [![](https://jitpack.io/v/GreyLabsDev/GradientComponents.svg)](https://jitpack.io/#GreyLabsDev/GradientComponents)
 
