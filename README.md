@@ -23,6 +23,7 @@ Full example you can see in sample [app](https://github.com/GreyLabsDev/Gradient
 **TODO**
 1. Optimization for animation of GradientTextView
 2. Angle cupport for gradient orientation
+3. Improve animation loop realization
 
 **GradientView, GradientTextView attributes**
  - gradientOrientation
