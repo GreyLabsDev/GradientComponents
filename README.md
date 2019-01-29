@@ -21,9 +21,11 @@ Full example you can see in sample [app](https://github.com/GreyLabsDev/Gradient
 9. Round corners support and attributes for GradientView
 
 **TODO**
-1. Optimization for animation of GradientTextView
-2. Angle cupport for gradient orientation
-3. Improve animation loop realization
+1. Angle cupport for gradient orientation
+2. Gradient orientation angle animation
+3. Gradient overlay for all type of views
+4. Optimization for animation of GradientTextView
+5. Improve animation loop realization
 
 **GradientView, GradientTextView attributes**
  - gradientOrientation
