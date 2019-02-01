@@ -8,6 +8,7 @@
 **Kotlin**
 
 Full example you can see in sample [app](https://github.com/GreyLabsDev/GradientComponents/tree/master/app).
+You can [download an APK](https://github.com/GreyLabsDev/GradientComponents/blob/master/sample.apk) of the sample app
 
 **What's done**
 1. GradientView component
