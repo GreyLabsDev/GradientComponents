@@ -3,11 +3,11 @@
 [![](https://jitpack.io/v/GreyLabsDev/GradientComponents.svg)](https://jitpack.io/#GreyLabsDev/GradientComponents)
 
 ### Android library for using gradient views with non-standard animation
+
+![gradientView](https://github.com/GreyLabsDev/GradientComponents/blob/master/gif_view.gif)
+![gradientTextView](https://github.com/GreyLabsDev/GradientComponents/blob/master/gif_text.gif)
+
 **Min. SDK: 19**
-
-![gradientView](https://media.giphy.com/media/pOOzEnatn4qeADSpBj/giphy.gif)
-![gradientTextView](https://media.giphy.com/media/2ALbeE9HDr27VHMrfm/giphy.gif)
-
 **Kotlin**
 
 Full example you can see in sample [app](https://github.com/GreyLabsDev/GradientComponents/tree/master/app).
