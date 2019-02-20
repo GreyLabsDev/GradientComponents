@@ -5,6 +5,9 @@
 ### Android library for using gradient views with non-standard animation
 **Min. SDK: 19**
 
+![](https://media.giphy.com/media/pOOzEnatn4qeADSpBj/giphy.gif)
+
+
 **Kotlin**
 
 Full example you can see in sample [app](https://github.com/GreyLabsDev/GradientComponents/tree/master/app).
