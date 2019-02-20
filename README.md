@@ -5,8 +5,8 @@
 ### Android library for using gradient views with non-standard animation
 **Min. SDK: 19**
 
-![](https://media.giphy.com/media/pOOzEnatn4qeADSpBj/giphy.gif)
-
+![gradientView](https://media.giphy.com/media/pOOzEnatn4qeADSpBj/giphy.gif)
+![gradientTextView](https://media.giphy.com/media/2ALbeE9HDr27VHMrfm/giphy.gif)
 
 **Kotlin**
 
